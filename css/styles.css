@@ -11289,6 +11289,8 @@ textarea.form-control-lg {
   }
 }
 
+/* Mis estilos */
+
 #redes {
   display: flex;
   flex-direction: column;
@@ -11336,4 +11338,86 @@ textarea.form-control-lg {
   background: #bdc3c7;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Carrito */
+
+#pag-carrito {
+  margin: 80px auto;
+  background-color: white;
+  padding: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.carrito-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+th {
+  text-align: left;
+  padding: 5px;
+  background: #0dcaf0;
+  font-weight: normal;
+}
+
+td {
+  padding: 10px 5px;
+}
+
+td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+
+td a {
+  color: #0dcaf0;
+  font-size: 12px;
+}
+
+td img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+
+}
+
+.precio-total {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.precio-total table {
+  border-top: 3px solid #0dcaf0;
+  width: 100%;
+  max-width: 400px;
+}
+
+td:last-child {
+  text-align: right;
+}
+
+th:last-child {
+  text-align: right;
+}
+
+#precio-final {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+#boton-calc {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+}
+
+.boton-calc {
+  background-color: #e9ecef;
 }
