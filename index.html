@@ -1,321 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Splendid Games - Tienda de Juegos de Mesa</title>
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/2e5b7324cc.js" crossorigin="anonymous"></script>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#!"><i class="fa-regular fa-gem"></i> Splendid Games</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Quiénes Somos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#preguntas">Preguntas Frecuentes</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">Todos los productos</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">Juegos de mesa</a></li>
-                                <li><a class="dropdown-item" href="#!">Rompecabezas</a></li>
-                                <li><a class="dropdown-item" href="#!">Accesorios</a></li>
-                                <li><a class="dropdown-item" href="#!">Novedades</a></li>
-                                <li><a class="dropdown-item" href="#!">Ofertas</a></li>
-                            </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página personal</title>
+    <link rel="stylesheet" href="./index.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2e5b7324cc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid" id="nav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#bienvenida">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#familia">Familia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#amigos">Amigos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#estudios">Estudios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <!-- <a href="./caja.html" >
-                            <button class="btn btn-outline-dark" type="submit">
-                                <i class="bi-cart-fill me-1"></i>
-                                Carrito
-                                <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                            </button>
-                        </a> -->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center">
-                                <a class="btn btn-outline-dark mt-auto" href="./caja.html">
-                                    <i class="bi-cart-fill me-1"></i> Carrito <span class="badge bg-dark text-white ms-1 rounded-pill" id="carrito-cont">0</span>
-                                </a>
-                            </div>
-                        </div>
-                    </form>
                 </div>
             </div>
         </nav>
-        <!-- Header-->
-        <header class="bg-dark py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">Juegos a tu medida</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">Para disfrutar con amigos o en familia</p>
-                </div>
-            </div>
-        </header>
-        <!-- Productos-->
-        <section class="py-5 productos">
-            <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="./assets/azul.jpeg" alt="juego de mesa azul" />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Azul</h5>
-                                    <!-- Product price-->
-                                    S/ 240
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto addCar" href="#">Añadir al carrito</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">OFERTA</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="./assets/catan.jpg" alt="juego de mesa Catan" />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Catan</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">S/ 220</span>
-                                    S/ 195
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto addCar" href="#">Añadir al carrito</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">OFERTA</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="./assets/codigo secreto.jpeg" alt="juego de mesa Codigo Secreto" />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Código Secreto</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">S/ 85</span>
-                                    S/ 70
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto addCar" href="#">Añadir al carrito</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="./assets/dixit.png" alt="juego de mesa Dixit" />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Dixit</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    S/ 160
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto addCar" href="#">Añadir al carrito</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="./assets/king of tokyo.jpg" alt="juego de mesa King of Tokyo" />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">King of Tokyo</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">S/ 200</span>
-                                    S/ 180
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto addCar" href="#">Añadir al carrito</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="./assets/pandemic.jpeg" alt="juego de mesa Pandemic" />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Pandemic</h5>
-                                    <!-- Product price-->
-                                    S/ 200
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto addCar" href="#">Añadir al carrito</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">OFERTA</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="./assets/splendor.jpeg" alt="juego de mesa Splendor" />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Splendor</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">S/ 160</span>
-                                    S/ 145
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto addCar" href="#">Añadir al carrito</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="./assets/sushi go party.jpg" alt="juego de mesa Sushi Go Party" />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Sushi Go Party!</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    S/ 110
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto addCar" href="#">Añadir al carrito</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Blog -->
-        <section class="py-5" id="blog">
-            <div class="container px-4 px-lg-5 mt-5">
-                <h2 class="fs-1"><i class="fa-solid fa-newspaper"></i> Blog</h2>
-                <article class="my-5">
-                    <h4>El boom de los juegos de mesa en un mundo digital</h4>
-                    <p>“El mundo digital ha cambiado nuestro tiempo libre, pero los juegos de mesa no paran de crecer. ¿Por qué?” Joaquim Dorca, socio director de Devir y experto en juegos de mesa, nos habla en este artículo de los factores clave para entender el auge y el éxito de los juegos de mesa en un entorno cada vez más digitalizado.</p>
-                    <a href="https://www.interempresas.net/Juguetes/Articulos/385475-El-boom-de-los-juegos-de-mesa-en-un-mundo-digital.html" class="ver-mas" target="_blank">Ver más <i class="fa-solid fa-arrow-right"></i></a>
-                </article>
-                <article class="my-5">
-                    <h4>Los juegos de mesa, una herramienta educativa para los profesores</h4>
-                    <p>Jugamos por diversión y por puro placer, pero cuando jugamos también aprendemos y socializamos. En la semana de la Acción Mundial por la Educación muchos son los profesores y pedagogos que reflexionan sobre cómo el juego de mesa puede ser un apoyo educativo básico para reforzar determinados aprendizajes en el aula.</p>
-                    <a href="https://www.interempresas.net/Tecnologia-aulas/Articulos/348732-Los-juegos-de-mesa-una-herramienta-educativa-para-los-profesores.html" class="ver-mas" target="_blank">Ver más <i class="fa-solid fa-arrow-right"></i></a>
-                </article>
-            </div>
-        </section>
-        <!-- Preguntas Frecuentes -->
-        <section class="py-5" id="preguntas">
-            <div class="container px-4 px-lg-5 mt-5">
-                <h2 class="fs-1"><i class="fa-solid fa-circle-question"></i> Preguntas Frecuentes</h2>
-                <article class="my-5">
-                    <h4>¿Qué juegos de mesa venden?</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quam id, nihil magnam delectus iusto enim praesentium natus odio maxime, libero optio porro error omnis molestiae. Quae corrupti ullam dolor.</p>
-                </article>
-                <article class="my-5">
-                    <h4>¿Que generan los juegos de mesa?</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quam id, nihil magnam delectus iusto enim praesentium natus odio maxime, libero optio porro error omnis molestiae. Quae corrupti ullam dolor.</p>
-                </article>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div id="redes">
-                <h4 id="nuestras-redes">Nuestras redes</h4>
-                <ul id="iconos-redes">
-                    <li class="icono-red"><i class="fa-brands fa-facebook"></i></li>
-                    <li class="icono-red"><i class="fa-brands fa-tiktok"></i></li>
-                    <li class="icono-red"><i class="fa-brands fa-instagram"></i></li>
-                </ul>
-            </div>
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Splendid Games 2022</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+    </header>
+    <section id="bienvenida">
+        <h1>Hola, soy Axel</h1>
+        <i id="bienvenida-text">Diseñador web</i>
+    </section>
+
+    <section id="familia">
+        <div id="familia-text">
+            <h2>Mi familia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum provident beatae laudantium maiores animi eligendi nobis iusto quo distinctio, porro facilis cum culpa voluptatibus eius perferendis sed ipsum, iste quisquam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis laudantium deserunt in sit sunt iste, earum debitis quia nostrum accusantium quas suscipit repudiandae maxime illo magnam nemo odio, doloribus temporibus.</p>
+        </div>
+        <img src="./stock images/familia grande.jpeg" alt="" id="familia-img">
+    </section>
+
+    <section id="amigos">
+        <div id="amigos-text">
+            <h2>Mis amigos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi assumenda totam eum explicabo ipsa iste reiciendis laudantium dolorum quibusdam quis repellat possimus qui sunt, mollitia eligendi autem odio asperiores maxime. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, odio rem? Blanditiis pariatur odit maxime nulla suscipit quibusdam cumque quis laudantium vero veritatis consequatur laborum eos, sed atque, possimus incidunt.</p>
+        </div>
+        <div id="amigos-img">
+            <img src="./stock images/amigos 1.jpg" alt="" class="amigos">
+            <img src="./stock images/amigos 2.jpg" alt="" class="amigos">
+            <img src="./stock images/amigos 3.jpg" alt="" class="amigos">
+        </div>
+    </section>
+    <!-- <section id="estudios">
+        <div id="estudios-text">
+            <h2>Mis estudios</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi assumenda totam eum explicabo ipsa iste reiciendis laudantium dolorum quibusdam quis repellat possimus qui sunt, mollitia eligendi autem odio asperiores maxime. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, odio rem? Blanditiis pariatur odit maxime nulla suscipit quibusdam cumque quis laudantium vero veritatis consequatur laborum eos, sed atque, possimus incidunt.</p>
+        </div>
+        <div id="estudios-img">
+            <img src="./stock images/html.png" alt="" class="estudios">
+            <img src="./stock images/css.png" alt="" class="estudios">
+            <img src="./stock images/js.png" alt="" class="estudios">
+            <img src="./stock images/react.png" alt="" class="estudios">
+        </div>
+    </section> -->
+    <section id="contacto">
+        <form action="">
+            <section id="formulario">
+                <h1>Contáctate conmigo</h1>
+                <hr>
+                <p>
+                    <label for="nombres">Nombres:</label>
+                    <input type="text" name="" id="nombres">
+                </p>
+                <p>
+                    <label for="apellidos">Apellidos:</label>
+                <input type="text" name="" id="apellidos">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="" id="email">
+                </p>            
+                <p>
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" name="" id="asunto">
+                </p>
+                <p>
+                    <label for="mensaje">Mensaje:</label> <br>
+                    <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje aquí."></textarea>
+                </p>
+                <p>
+                    <label for="elementos">Adjuntar Elementos:</label> <br>
+                    <input type="file" name="" id="elementos">
+                </p>
+                <button type="submit" class="form">Enviar Datos</button>
+                <button type="reset" class="form">Restaurar</button>
+            </section>
+        </form>
+    </section>
+    <footer>
+        <div class="contact-section-header">
+            <h2>Trabajemos juntos...</h2>
+            <p>Contáctame en cualquiera de mis redes sociales</p>
+        </div>
+        <div class="contact-links">
+            <a href="https://www.facebook.com/axel.andicoechea/" target="_blank" class="btn contact-details">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="https://github.com/aandicoechea" id="profile-link" target="_blank" class="btn contact-details">
+                <i class="fab fa-github"></i> Github
+            </a>
+            <a href="https://twitter.com/tuiterowannabe" target="_blank" class="btn contact-details">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href="mailto:ajaam19@gmail.com" class="btn contact-details">
+                <i class="far fa-envelope"></i> Email
+            </a>
+            <a href="tel:+51943410748" class="btn contact-details">
+                <i class="fas fa-mobile-alt"></i> Call me
+            </a>
+            
+        </div>
+    </footer>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
 </html>

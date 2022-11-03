@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: "Noto Sans";
+}
+
+header {
+    width: 100%;
+    background: #be3144;
+}
+#navbarNav {
+    display: flex;
+    justify-content: end;
+}
+
+#bienvenida {
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #e74c3c, #000000);
+    background: linear-gradient(to right, #e74c3c, #000000);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    color: rgb(247, 241, 233);
+}
+
+#bienvenida-text {
+    max-width: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(247, 241, 233);
+}
+
+button {
+    background-color: rgb(244, 239, 100);
+    margin-top: 15px;
+    border-bottom-left-radius: 9.1875px;
+    border-bottom-right-radius: 9.1875px;
+    border-top-left-radius: 9.1875px;
+    border-top-right-radius: 9.1875px;
+    border-style: solid;
+    border-color:  rgb(24, 49, 83);
+    box-shadow: rgb(24, 49, 83) 0px 4.59px 0px 0px;
+    padding-bottom: 11px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 11px;
+    display:block;
+    text-align: center;
+    border-right-width: 1.5px;
+    border-left-width: 1.5px;
+    font-family: "Noto Sans";
+}
+
+button:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+#familia {
+    background-image: linear-gradient(115deg, rgb(244, 232, 153), rgb(249, 138, 236));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+}
+
+#familia-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 40%; margin-right: 100px;
+}
+
+#familia-img {
+    height: 250px;
+    width: 400px;
+    border-radius: 100%;
+    transition: border-radius 2s, width 2s, height 2s;
+    transition-timing-function: ease;
+}
+
+#familia-img:hover {
+    border-radius: 5%;
+    height: 400px;
+    width: 600px;
+}
+
+#amigos {
+    background: #1f4037;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+}
+
+#amigos-text {
+    margin-bottom: 35px;
+}
+
+.amigos {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    transition: width 1s, height 1s;
+    transition-timing-function: ease;
+}
+
+.amigos:hover {
+    width: 315px;
+    height: 315px;
+    cursor: pointer;
+}
+
+#header {
+    width: 100%;
+}
+
+/* #estudios-img {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    border-style: dashed;
+    border-width: thick;
+}
+
+img {
+    width: 200px;
+    height: 100px;
+}
+
+#img1 {
+    grid-row: 1/ 1;
+    grid-column: 1/ 1;
+}
+
+#img2 {
+    grid-row: 1/ 1;
+    grid-column: 2/ 2;
+}
+
+#img3 {
+    grid-row: 2/ 2;
+    grid-column: 1/ 1;
+}
+
+#img4 {
+    grid-row: 2/ 2;
+    grid-column: 2/ 2;
+} */
+
+#contacto {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e74c3c, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 900px;
+}
+
+form {
+    color: rgb(247, 241, 233);
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 25px;
+
+}
+
+#formulario {
+    align-content: center;
+    background-color: rgb(134, 170, 25);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 30%), 0px 0px 20px rgb(0 0 0 / 30%);
+    padding: 1em;
+    width: 70%;
+}
+
+.form {
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: rgb(135, 73, 73);
+    color: antiquewhite;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    display: inline;
+}
+
+footer {
+    color: white;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+}
